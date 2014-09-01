@@ -14,3 +14,11 @@ C:\Users\robert\Documents\GitHub\XNAPWN\WeakSven\WeakSven\obj\x86\Debug\WeakSven
 C:\Users\robert\Documents\GitHub\XNAPWN\WeakSven\WeakSven\obj\x86\Debug\WeakSven.pdb
 C:\Users\robert\Documents\GitHub\XNAPWN\WeakSven\WeakSven\bin\x86\Debug\Content\TargetRetical.xnb
 C:\Users\robert\Documents\GitHub\XNAPWN\WeakSven\WeakSven\bin\x86\Debug\Content\Characters\PlaceHolderRob.xnb
+D:\GitHub\XNAPWN\WeakSven\WeakSven\bin\x86\Debug\Content\TargetRetical.xnb
+D:\GitHub\XNAPWN\WeakSven\WeakSven\bin\x86\Debug\Content\Characters\PlaceHolderRob.xnb
+D:\GitHub\XNAPWN\WeakSven\WeakSven\bin\x86\Debug\WeakSven.exe
+D:\GitHub\XNAPWN\WeakSven\WeakSven\bin\x86\Debug\WeakSven.pdb
+D:\GitHub\XNAPWN\WeakSven\WeakSven\obj\x86\Debug\WeakSven.csprojResolveAssemblyReference.cache
+D:\GitHub\XNAPWN\WeakSven\WeakSven\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+D:\GitHub\XNAPWN\WeakSven\WeakSven\obj\x86\Debug\WeakSven.exe
+D:\GitHub\XNAPWN\WeakSven\WeakSven\obj\x86\Debug\WeakSven.pdb

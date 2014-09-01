@@ -6,6 +6,8 @@ namespace WeakSven
 {
 	class Character : Entity
 	{
+		public Texture2D image = null;
+
 		protected Rectangle rect = new Rectangle(0, 0, 0, 0);
 
 		public Vector2 Position { get; set; }
@@ -17,7 +19,10 @@ namespace WeakSven
 
 		public virtual void Load(ContentManager Content, string imageFile)
 		{
+			image = Content.Load<Texture2D>(imageFile);
 
+			rect.Width = image.Width;
+			rect.Height = image.Height;
 
 			rect.X = (int)Position.X;
 			rect.Y = (int)Position.Y;
@@ -33,7 +38,7 @@ namespace WeakSven
 
 		public void Draw(SpriteBatch spriteBatch)
 		{
-
+			spriteBatch.Draw(image, rect, Color.White);
 		}
 	}
 }

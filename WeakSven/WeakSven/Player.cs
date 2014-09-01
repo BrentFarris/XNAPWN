@@ -30,7 +30,6 @@ namespace WeakSven
 		public override void Load(ContentManager Content, string imageFile)
 		{
 			base.Load(Content, imageFile);
-
 		}
 
 		public override void Update(GameTime gameTime)
