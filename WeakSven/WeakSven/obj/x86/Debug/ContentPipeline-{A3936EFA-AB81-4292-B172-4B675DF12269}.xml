@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\GitHub\XNAPWN\WeakSven\WeakSven\bin\x86\Debug\Content\Characters\Player.xnb</Output>
-      <Time>2014-09-01T15:16:44.0688391-07:00</Time>
+      <Output>C:\Users\student\Documents\GitHub\XNAPWN\WeakSven\WeakSven\bin\x86\Debug\Content\Characters\Player.xnb</Output>
+      <Time>2014-09-06T13:12:23.6544265-07:00</Time>
     </Item>
     <Item>
       <Source>Audio\SFX\bing.wav</Source>
@@ -16,8 +16,26 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\GitHub\XNAPWN\WeakSven\WeakSven\bin\x86\Debug\Content\Audio\SFX\bing.xnb</Output>
-      <Time>2014-09-01T15:16:44.0678979-07:00</Time>
+      <Output>C:\Users\student\Documents\GitHub\XNAPWN\WeakSven\WeakSven\bin\x86\Debug\Content\Audio\SFX\bing.xnb</Output>
+      <Time>2014-09-06T13:12:23.6534266-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Characters\Mario.png</Source>
+      <Name>Characters\Mario</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\student\Documents\GitHub\XNAPWN\WeakSven\WeakSven\bin\x86\Debug\Content\Characters\Mario.xnb</Output>
+      <Time>2014-09-06T13:24:37.0110331-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Effects\bullet.png</Source>
+      <Name>Effects\bullet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\student\Documents\GitHub\XNAPWN\WeakSven\WeakSven\bin\x86\Debug\Content\Effects\bullet.xnb</Output>
+      <Time>2014-09-06T15:55:52.55923-07:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -26,10 +44,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>D:\GitHub\XNAPWN\WeakSven\WeakSvenContent\</RootDirectory>
-      <LoggerRootDirectory>D:\GitHub\XNAPWN\WeakSven\WeakSven\</LoggerRootDirectory>
-      <IntermediateDirectory>D:\GitHub\XNAPWN\WeakSven\WeakSven\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>D:\GitHub\XNAPWN\WeakSven\WeakSven\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\student\Documents\GitHub\XNAPWN\WeakSven\WeakSvenContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\student\Documents\GitHub\XNAPWN\WeakSven\WeakSven\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\student\Documents\GitHub\XNAPWN\WeakSven\WeakSven\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\student\Documents\GitHub\XNAPWN\WeakSven\WeakSven\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -57,8 +75,8 @@
         <Value>2011-09-01T16:22:30-07:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2014-09-01T15:16:25.7049844-07:00</Value>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2014-09-06T06:46:38.6658778-07:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

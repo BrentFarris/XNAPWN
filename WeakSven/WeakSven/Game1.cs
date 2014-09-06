@@ -9,6 +9,10 @@ namespace WeakSven
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
+		public static KeyboardState previousKeyboard;
+
+		Platform platform = new Platform(new Rectangle(0, 400, 800, 75));
+
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -27,7 +31,8 @@ namespace WeakSven
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-			Player.Instance.Load(Content, "Characters/Player");
+			Player.Instance.Load(Content, "Characters/Mario");
+			Projectile.StaticLoad(Content, "Effects/bullet");
         }
 
         protected override void UnloadContent() { }
@@ -41,8 +46,10 @@ namespace WeakSven
 				this.Exit();
 
 			Player.Instance.Update(gameTime);
+			platform.Update();
 
             base.Update(gameTime);
+			previousKeyboard = Keyboard.GetState();
         }
 
         protected override void Draw(GameTime gameTime)

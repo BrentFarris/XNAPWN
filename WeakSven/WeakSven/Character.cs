@@ -9,6 +9,7 @@ namespace WeakSven
 		public Animation animation = new Animation();
 
 		protected Rectangle rect = new Rectangle(0, 0, 0, 0);
+		public Rectangle Rect { get { return rect; } }
 
 		public Vector2 Position { get; set; }
 		public Vector2 Velocity = Vector2.Zero;
@@ -19,9 +20,12 @@ namespace WeakSven
 
 		public virtual void Load(ContentManager Content, string imageFile)
 		{
-			animation.FrameCountX = 4;
-			animation.FrameCountY = 4;
-			animation.FramesPerSec = 33;
+			if (animation.FrameCountX == 0)
+				animation.FrameCountX = 4;
+			if (animation.FrameCountY == 0)
+				animation.FrameCountY = 4;
+			if (animation.FramesPerSec == 0)
+				animation.FramesPerSec = 33;
 
 			animation.SpriteSheet = Content.Load<Texture2D>(imageFile);
 
@@ -38,18 +42,10 @@ namespace WeakSven
 			rect.X = (int)Position.X;
 			rect.Y = (int)Position.Y;
 
-			if (Velocity == Vector2.Zero)
-			{
-				animation.Frame = 1;
-				animation.Paused = true;
-			}
-			else
-				animation.Paused = false;
-
 			animation.Update(gameTime);
 		}
 
-		public void Draw(SpriteBatch spriteBatch)
+		public virtual void Draw(SpriteBatch spriteBatch)
 		{
 			animation.Draw(spriteBatch, Position);
 		}

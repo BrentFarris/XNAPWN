@@ -38,6 +38,9 @@ namespace WeakSven
 			}
 		}
 
+		public int sequenceStart = 0;
+		public int sequenceEnd = 0;
+
 		public int Frame { get; set; }
 		public bool Paused { get; set; }
 		public float TotalElapsed { get; set; }
@@ -55,7 +58,19 @@ namespace WeakSven
 			{
 				Frame++;
 				// Keep the Frame between 0 and the total frames, minus one.
-				Frame = Frame % (FrameCountX * FrameCountY);
+
+				if (sequenceStart == sequenceEnd && sequenceStart == 0)
+					Frame = Frame % (FrameCountX * FrameCountY);
+				else
+				{
+					if (Frame < sequenceStart)
+						Frame = sequenceStart;
+					else if (Frame > sequenceEnd)
+						Frame = sequenceStart;
+
+					Frame = Frame % (sequenceEnd - sequenceStart) + sequenceStart;
+				}
+
 				TotalElapsed -= TimePerFrame;
 			}
 		}
@@ -69,7 +84,7 @@ namespace WeakSven
 		public void Draw(SpriteBatch spriteBatch, int frame, Vector2 screenPos)
 		{
 			int xFrame = frame % FrameCountX;
-			int yFrame = frame / FrameCountY;
+			int yFrame = frame / FrameCountX;
 
 			Rectangle sourcerect = new Rectangle(FrameWidth * xFrame, FrameHeight * yFrame,
 				FrameWidth, FrameHeight);

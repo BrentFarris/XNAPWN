@@ -1,11 +1,11 @@
-﻿using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Audio;
+﻿using System.Collections.Generic;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
+using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
 namespace WeakSven
 {
-	// sealed
 	class Player : InteractiveCharacter
 	{
 		#region Singleton Stuff
@@ -21,51 +21,118 @@ namespace WeakSven
 			}
 		}
 
-		private Player() : base() { }
+		private Player() : base() { Speed = 5.0f; }
 		#endregion
-
-		public AudioSFX bing = new AudioSFX();
 
 		public void SetName(string name) { Name = name; }
 
+		public Vector2 PreviousVelocity { get; protected set; }
+		public List<Projectile> bullets = new List<Projectile>(10);
+
 		public override void Load(ContentManager Content, string imageFile)
 		{
-			base.Load(Content, imageFile);
+			animation.FramesPerSec = 12;
+			animation.FrameCountY = 5;
 
-			bing.Sound = Content.Load<SoundEffect>("Audio/SFX/bing");
+			base.Load(Content, imageFile);
 		}
 
 		public override void Update(GameTime gameTime)
 		{
-			if (((int)gameTime.TotalGameTime.TotalSeconds) % 3 == 0)
-				bing.Play(gameTime);
+			if (Keyboard.GetState().IsKeyDown(Keys.Y) &&
+				Game1.previousKeyboard.IsKeyUp(Keys.Y))
+			{
+				bullets.Add(new Projectile(Position, Vector2.UnitY));
+			}
 
-			// TODO:  Change player controls to fit your game
-
-			if (Keyboard.GetState().IsKeyDown(Keys.W) ||
-				Keyboard.GetState().IsKeyDown(Keys.Up))
+			if (Keyboard.GetState().IsKeyDown(Keys.D))
 			{
-				Velocity.Y = -Speed;
-			}
-			else if (Keyboard.GetState().IsKeyDown(Keys.A) ||
-				Keyboard.GetState().IsKeyDown(Keys.Left))
-			{
-				Velocity.X = -Speed;
-			}
-			else if (Keyboard.GetState().IsKeyDown(Keys.S) ||
-				Keyboard.GetState().IsKeyDown(Keys.Down))
-			{
-				Velocity.Y = Speed;
-			}
-			else if (Keyboard.GetState().IsKeyDown(Keys.D) ||
-				Keyboard.GetState().IsKeyDown(Keys.Right))
-			{
+				animation.sequenceStart = 0;
+				animation.sequenceEnd = animation.sequenceStart + animation.FrameCountX * 2;
 				Velocity.X = Speed;
+				animation.Paused = false;
+			}
+			else if (Keyboard.GetState().IsKeyDown(Keys.A))
+			{
+				animation.sequenceStart = animation.FrameCountX * 2;
+				animation.sequenceEnd = animation.sequenceStart + animation.FrameCountX * 2;
+				Velocity.X = -Speed;
+				animation.Paused = false;
 			}
 			else
-				Velocity = Vector2.Zero;
+				Velocity.X = 0;
+
+			if (Velocity.Y < -InteractiveCharacter.GRAVITY || Velocity.Y > InteractiveCharacter.GRAVITY)
+			{
+				if (Velocity.X > 0)
+				{
+					animation.sequenceStart = 16;
+					animation.sequenceEnd = 17;
+				}
+				else if (Velocity.X < 0)
+				{
+					animation.sequenceStart = 17;
+					animation.sequenceEnd = 18;
+				}
+
+				animation.Paused = false;
+			}
+			else if (Velocity.X == 0)
+			{
+				if (PreviousVelocity.X < 0)
+					StandRight();
+				else if (PreviousVelocity.X > 0)
+					StandLeft();
+			}
+
+			if (Keyboard.GetState().IsKeyDown(Keys.Space) &&
+				Game1.previousKeyboard.IsKeyUp(Keys.Space))
+			{
+				Velocity.Y = -25;
+			}
+
+			foreach (Projectile b in bullets)
+				b.Update(gameTime);
 
 			base.Update(gameTime);
+			PreviousVelocity = Velocity;
+		}
+
+		public override void Draw(SpriteBatch spriteBatch)
+		{
+			base.Draw(spriteBatch);
+
+			foreach (Projectile b in bullets)
+				b.Draw(spriteBatch);
+		}
+
+		private void StandRight()
+		{
+			animation.sequenceStart = 8;
+			animation.sequenceEnd = 9;
+			animation.Paused = false;
+		}
+
+		private void StandLeft()
+		{
+			animation.sequenceStart = 0;
+			animation.sequenceEnd = 1;
+			animation.Paused = false;
+		}
+
+		public void Landed(Rectangle other)
+		{
+			Position = new Vector2(
+					Position.X,
+					other.Y - Rect.Height
+				);
+
+			Velocity = new Vector2(Velocity.X, 0);
+
+			if (animation.sequenceStart == 17)
+				StandRight();
+			else if (animation.sequenceStart == 16)
+				StandLeft();
 		}
 	}
 }

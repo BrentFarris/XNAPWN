@@ -14,3 +14,5 @@ D:\GitHub\XNAPWN\WeakSven\WeakSven\obj\x86\Debug\WeakSven.csprojResolveAssemblyR
 D:\GitHub\XNAPWN\WeakSven\WeakSven\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 D:\GitHub\XNAPWN\WeakSven\WeakSven\obj\x86\Debug\WeakSven.exe
 D:\GitHub\XNAPWN\WeakSven\WeakSven\obj\x86\Debug\WeakSven.pdb
+C:\Users\student\Documents\GitHub\XNAPWN\WeakSven\WeakSven\bin\x86\Debug\Content\Characters\Mario.xnb
+C:\Users\student\Documents\GitHub\XNAPWN\WeakSven\WeakSven\bin\x86\Debug\Content\Effects\bullet.xnb
