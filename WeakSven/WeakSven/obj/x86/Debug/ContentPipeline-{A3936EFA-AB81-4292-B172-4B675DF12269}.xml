@@ -7,17 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\student\Documents\GitHub\XNAPWN\WeakSven\WeakSven\bin\x86\Debug\Content\Characters\Player.xnb</Output>
-      <Time>2014-09-06T13:12:23.6544265-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Audio\SFX\bing.wav</Source>
-      <Name>Audio\SFX\bing</Name>
-      <Importer>WavImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\student\Documents\GitHub\XNAPWN\WeakSven\WeakSven\bin\x86\Debug\Content\Audio\SFX\bing.xnb</Output>
-      <Time>2014-09-06T13:12:23.6534266-07:00</Time>
+      <Output>\\psf\Home\Documents\GitHub\XNAPWN\WeakSven\WeakSven\bin\x86\Debug\Content\Characters\Player.xnb</Output>
+      <Time>2014-09-12T12:24:01-07:00</Time>
     </Item>
     <Item>
       <Source>Characters\Mario.png</Source>
@@ -25,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\student\Documents\GitHub\XNAPWN\WeakSven\WeakSven\bin\x86\Debug\Content\Characters\Mario.xnb</Output>
-      <Time>2014-09-06T13:24:37.0110331-07:00</Time>
+      <Output>\\psf\Home\Documents\GitHub\XNAPWN\WeakSven\WeakSven\bin\x86\Debug\Content\Characters\Mario.xnb</Output>
+      <Time>2014-09-12T12:24:01-07:00</Time>
     </Item>
     <Item>
       <Source>Effects\bullet.png</Source>
@@ -34,8 +25,53 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\student\Documents\GitHub\XNAPWN\WeakSven\WeakSven\bin\x86\Debug\Content\Effects\bullet.xnb</Output>
-      <Time>2014-09-06T15:55:52.55923-07:00</Time>
+      <Output>\\psf\Home\Documents\GitHub\XNAPWN\WeakSven\WeakSven\bin\x86\Debug\Content\Effects\bullet.xnb</Output>
+      <Time>2014-09-12T12:24:01-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Button\down.png</Source>
+      <Name>Button\down</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>\\psf\Home\Documents\GitHub\XNAPWN\WeakSven\WeakSven\bin\x86\Debug\Content\Button\down.xnb</Output>
+      <Time>2014-08-08T22:37:45-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Button\left.png</Source>
+      <Name>Button\left</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>\\psf\Home\Documents\GitHub\XNAPWN\WeakSven\WeakSven\bin\x86\Debug\Content\Button\left.xnb</Output>
+      <Time>2014-08-08T22:38:25-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Button\right.png</Source>
+      <Name>Button\right</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>\\psf\Home\Documents\GitHub\XNAPWN\WeakSven\WeakSven\bin\x86\Debug\Content\Button\right.xnb</Output>
+      <Time>2014-08-08T22:39:11-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Button\up.png</Source>
+      <Name>Button\up</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>\\psf\Home\Documents\GitHub\XNAPWN\WeakSven\WeakSven\bin\x86\Debug\Content\Button\up.xnb</Output>
+      <Time>2014-08-08T22:36:52-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\SFX\bing.wav</Source>
+      <Name>Audio\SFX\bing</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>\\psf\Home\Documents\GitHub\XNAPWN\WeakSven\WeakSven\bin\x86\Debug\Content\Audio\SFX\bing.xnb</Output>
+      <Time>2014-09-12T12:24:01-07:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -44,10 +80,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\student\Documents\GitHub\XNAPWN\WeakSven\WeakSvenContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\student\Documents\GitHub\XNAPWN\WeakSven\WeakSven\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\student\Documents\GitHub\XNAPWN\WeakSven\WeakSven\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\student\Documents\GitHub\XNAPWN\WeakSven\WeakSven\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>\\psf\Home\Documents\GitHub\XNAPWN\WeakSven\WeakSvenContent\</RootDirectory>
+      <LoggerRootDirectory>\\psf\Home\Documents\GitHub\XNAPWN\WeakSven\WeakSven\</LoggerRootDirectory>
+      <IntermediateDirectory>\\psf\Home\Documents\GitHub\XNAPWN\WeakSven\WeakSven\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>\\psf\Home\Documents\GitHub\XNAPWN\WeakSven\WeakSven\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -75,8 +111,8 @@
         <Value>2011-09-01T16:22:30-07:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2014-09-06T06:46:38.6658778-07:00</Value>
+        <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2014-08-03T08:54:58.4913473-07:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

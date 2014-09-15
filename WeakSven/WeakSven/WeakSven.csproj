@@ -74,6 +74,7 @@
   <ItemGroup>
     <Compile Include="Animation.cs" />
     <Compile Include="AudioSFX.cs" />
+    <Compile Include="Buttons.cs" />
     <Compile Include="Character.cs" />
     <Compile Include="Circle.cs" />
     <Compile Include="Enemy.cs" />

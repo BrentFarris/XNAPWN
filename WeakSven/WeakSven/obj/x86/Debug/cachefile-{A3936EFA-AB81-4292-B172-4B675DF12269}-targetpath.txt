@@ -1,4 +1,8 @@
 Content\Characters\Player.xnb
-Content\Audio\SFX\bing.xnb
 Content\Characters\Mario.xnb
 Content\Effects\bullet.xnb
+Content\Button\down.xnb
+Content\Button\left.xnb
+Content\Button\right.xnb
+Content\Button\up.xnb
+Content\Audio\SFX\bing.xnb

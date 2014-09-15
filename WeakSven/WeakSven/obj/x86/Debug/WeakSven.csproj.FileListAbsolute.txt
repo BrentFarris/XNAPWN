@@ -16,3 +16,16 @@ D:\GitHub\XNAPWN\WeakSven\WeakSven\obj\x86\Debug\WeakSven.exe
 D:\GitHub\XNAPWN\WeakSven\WeakSven\obj\x86\Debug\WeakSven.pdb
 C:\Users\student\Documents\GitHub\XNAPWN\WeakSven\WeakSven\bin\x86\Debug\Content\Characters\Mario.xnb
 C:\Users\student\Documents\GitHub\XNAPWN\WeakSven\WeakSven\bin\x86\Debug\Content\Effects\bullet.xnb
+\\psf\Home\Documents\GitHub\XNAPWN\WeakSven\WeakSven\bin\x86\Debug\Content\Characters\Player.xnb
+\\psf\Home\Documents\GitHub\XNAPWN\WeakSven\WeakSven\bin\x86\Debug\Content\Characters\Mario.xnb
+\\psf\Home\Documents\GitHub\XNAPWN\WeakSven\WeakSven\bin\x86\Debug\Content\Effects\bullet.xnb
+\\psf\Home\Documents\GitHub\XNAPWN\WeakSven\WeakSven\bin\x86\Debug\Content\Button\down.xnb
+\\psf\Home\Documents\GitHub\XNAPWN\WeakSven\WeakSven\bin\x86\Debug\Content\Button\left.xnb
+\\psf\Home\Documents\GitHub\XNAPWN\WeakSven\WeakSven\bin\x86\Debug\Content\Button\right.xnb
+\\psf\Home\Documents\GitHub\XNAPWN\WeakSven\WeakSven\bin\x86\Debug\Content\Button\up.xnb
+\\psf\Home\Documents\GitHub\XNAPWN\WeakSven\WeakSven\bin\x86\Debug\Content\Audio\SFX\bing.xnb
+\\psf\Home\Documents\GitHub\XNAPWN\WeakSven\WeakSven\bin\x86\Debug\WeakSven.exe
+\\psf\Home\Documents\GitHub\XNAPWN\WeakSven\WeakSven\bin\x86\Debug\WeakSven.pdb
+\\psf\Home\Documents\GitHub\XNAPWN\WeakSven\WeakSven\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+\\psf\Home\Documents\GitHub\XNAPWN\WeakSven\WeakSven\obj\x86\Debug\WeakSven.exe
+\\psf\Home\Documents\GitHub\XNAPWN\WeakSven\WeakSven\obj\x86\Debug\WeakSven.pdb
